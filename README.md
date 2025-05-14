@@ -1,5 +1,83 @@
 # PLP-COVID-19-Global-Data-Tracker
 __________________________________
+📝 Project Title: COVID-19 Global Data Tracker
+Project Description:
+
+In this project, learners will build a data analysis and reporting notebook (or app) that tracks global COVID-19 trends. The project will analyze cases, deaths, recoveries, and vaccinations across countries and time. Learners will clean and process real-world data, perform exploratory data analysis (EDA), generate insights, and visualize trends using Python data tools.
+
+By the end, they’ll have a data analysis report with visuals and narrative insights, suitable for presentation or publishing.
+
+🚩 Project Objectives:
+
+✅ Import and clean COVID-19 global data
+✅ Analyze time trends (cases, deaths, vaccinations)
+✅ Compare metrics across countries/regions
+✅ Visualize trends with charts and maps
+✅ Communicate findings in a Jupyter Notebook or PDF report
+__________________________________
+🗂️ Project Segments (Step-by-Step Guide)
+----------------------------------
+1️⃣ Data Collection
+
+Goal: Obtain a reliable COVID-19 dataset.
+
+✅ Data Sources:
+
+Our World in Data COVID-19 Dataset (CSV & API)
+
+Johns Hopkins University GitHub Repository
+
+👉 Recommended for beginners: Use the cleaned CSV from Our World in Data (easy to load with pandas).
+
+✅ Action:
+
+Download owid-covid-data.csv from the above link.
+
+Save in your working folder.
+
+__________________________________
+2️⃣ Data Loading & Exploration
+
+Goal: Load the dataset and explore its structure.
+
+✅ Tasks:
+
+Load data using pandas.read_csv().
+
+Check columns: df.columns.
+
+Preview rows: df.head().
+
+Identify missing values: df.isnull().sum().
+
+✅ Tools:
+
+pandas
+
+📌 Key columns:
+
+date, location, total_cases, total_deaths, new_cases, new_deaths, total_vaccinations, etc.
+
+_________________________________
+3️⃣ Data Cleaning
+
+Goal: Prepare data for analysis.
+
+✅ Tasks:
+
+Filter countries of interest (e.g., Kenya, USA, India).
+
+Drop rows with missing dates/critical values.
+
+Convert date column to datetime: pd.to_datetime().
+
+Handle missing numeric values with fillna() or interpolate().
+
+✅ Tools:
+
+pandas
+_________________________________
+4️⃣ Exploratory Data Analysis (EDA)
 Goal: Generate descriptive statistics & explore trends.
 
 ✅ Tasks:
@@ -26,6 +104,7 @@ matplotlib
 
 seaborn
 
+___________________________________
 5️⃣ Visualizing Vaccination Progress
 
 Goal: Analyze vaccination rollouts.
@@ -47,7 +126,7 @@ Optional: Pie charts for vaccinated vs. unvaccinated.
 matplotlib
 
 seaborn
-
+__________________________________
 6️⃣ Optional: Build a Choropleth Map
 
 Goal: Visualize cases or vaccination rates by country on a world map.
@@ -64,6 +143,7 @@ Prepare a dataframe with iso_code, total_cases for the latest date.
 
 Plot a choropleth showing case density or vaccination rates.
 
+________________________________
 7️⃣ Insights & Reporting
 
 Goal: Summarize findings.
